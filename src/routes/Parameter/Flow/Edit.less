@@ -1,0 +1,115 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.success {
+  font-size: 40px;
+  color: #52c41a;
+  text-align: center;
+}
+.icons{
+  cursor: pointer;
+}
+.search{
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 16px;
+  label{
+    margin-right: 8px;
+  }
+  .inputDep{
+    display: inline-flex;
+    line-height: 32px;
+  }
+}
+.mainCol{
+  font-size: 14px;
+  .complaint{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    height: 48px;
+    line-height: 30px;
+    padding: 8px;
+    label{
+      font-weight: bold;
+    }
+    :global{
+      .ant-switch-checked{
+        background-color: #4dd865;
+      }
+      .ant-switch{
+        margin-top: 4px;
+        float: right;
+      }
+    }
+  }
+  .checkStyel{
+    margin-top: 16px;
+  }
+  .selectStyle1{
+    margin-top: 16px;
+    width: 100%;
+    :global{
+      .ant-select{
+        width: 100%;
+      }
+    }
+  }
+  .selectStyle{
+    margin-top: 16px;
+    :global{
+      .ant-select{
+        margin-right: 8px;
+        width: 100%;
+      }
+      .anticon{
+        line-height: 30px;
+        color: #4a7dff;
+      }
+    }
+  }
+  .addList{
+    margin-top: 16px;
+    cursor: pointer;
+    i{
+      color: #4a7dff;
+    }
+    span{
+      color: #4a7dff;
+      margin-left: 5px;
+    }
+  }
+
+}
+.buttomButton {
+  width: 100%;
+  margin-top: 8px;
+  padding: 16px;
+  background-color: #fff;
+  text-align: right;
+}
+
+.inputWrap{
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: #fff;
+  margin-bottom: 24px;
+  .item{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0;
+    }
+    .name{
+      font-size: 14px;
+      color: RGBA(0, 0, 0, 0.85);
+    }
+    .input{
+      margin-left: 16px;
+      width: 200px;
+    }
+  }
+}

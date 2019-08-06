@@ -1,0 +1,218 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.headerList {
+  margin-bottom: 4px;
+}
+
+.mainCard{
+  textarea{
+    border: 1px solid #d6d6d6;
+    resize: none;
+    height: 100px;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  :global {
+    .ant-card-bordered{
+      border: 0;
+    }
+    .ant-card-body{
+      padding: 16px;
+    }
+    .ant-card-head {
+      background-color: #f2f2f2;
+      height: 40px;
+      .ant-card-head-title{
+        padding: 12px 0;
+      }
+    }
+  }
+}
+.listContent {
+  font-size: 0;
+  .listContentItem {
+    color: @text-color-secondary;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: @font-size-base;
+    margin-right: 4px;
+    > span {
+      line-height: 20px;
+    }
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+      text-align: left;
+    }
+    .listItem{
+      span{
+        padding-right: 8px;
+      }
+    }
+  }
+}
+.mainCheck{
+  width: 20%;
+  height: 40px;
+  float: left;
+  margin-top: 6px;
+}
+.divider {
+  margin-top: 16px;
+}
+.treatSituation{
+  textarea{
+    border: 1px solid #d6d6d6;
+    height: 100px;
+    width: 100%;
+  }
+  .label{
+    font-weight: bold;
+    margin-right: 16px;
+  }
+}
+.treatSug{
+  padding: 16px;
+  border: 1px dashed #4a7dff;
+  border-radius: 2px;
+  background-color: rgba(74, 125, 255, 0.03);
+  h3{
+    font-size: 15px;
+  }
+  .number{
+    color: #4a7dff;
+    padding-left: 16px;
+  }
+}
+.medicine{
+  margin-top: 24px;
+  h3{
+    font-size: 14px;
+  }
+}
+.testResult{
+  margin-bottom: 24px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .title{
+    color: #4a7dff;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  h4{
+    color: #4a7dff;
+    font-size: 15px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
+.linkAge{
+  //display: inline-table;
+  height: 36px;
+  line-height: 36px;
+  input{
+    width: 40px;
+    height: 25px;
+  }
+  .timeSpan{
+    padding-left: 8px;
+  }
+}
+.headButton {
+  border-color: #4a7dff;
+  color: #4a7dff;
+}
+.buttomBtn{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  width: 100%;
+  text-align: right;
+  padding: 16px;
+  button{
+    margin-right: 8px;
+  }
+  .cancelBtn {
+    //margin-right: 40px;
+  }
+}
+.rowFlex{
+  display: flex;
+  margin-top: 16px;
+  .colFlex{
+    flex: 0 0 300px;
+  }
+  .colFlex1{
+    flex: 0 0 190px;
+  }
+  .colFlexIcon{
+    flex: 0 32px;
+    cursor: pointer;
+  }
+}
+.cardButtomBtn{
+  text-align: right;
+  margin: 16px;
+  button{
+    border-color: #61cc8f;
+    color: #61cc8f;
+  }
+}
+
+.chooseDegree{
+  :global{
+    .ant-modal-header{
+      //border-bottom: none;
+    }
+    .ant-modal-footer{
+      border-top: none;
+    }
+  }
+}
+
+.required{
+  &:before{
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 14px;
+    color: #f5222d;
+  }
+}
+
+.rowDia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .title{
+    width:120px;
+  }
+  .sep{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.cureHintWrap{
+  border-top: 1px solid rgb(232, 232, 232);
+  margin-top: 15px;
+  padding-top: 15px;
+  line-height: 1.8;
+  .title{
+    font-size: 14px;
+    font-weight: 500;
+    color:rgba(0,0,0,0.85);
+  }
+  .content{
+    //padding-left: 15px;
+  }
+}

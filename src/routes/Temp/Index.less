@@ -1,0 +1,194 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.headerList {
+  padding-bottom: 8px;
+}
+
+.salesBar {
+  padding: 24px;
+  background: #fff;
+  h4{
+    font-size: 16px;
+  }
+}
+
+.testResult{
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  .resultItemWrapper {
+    padding: 16px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .resultItemTit {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .resultDescripWrapper {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .describeTiT {
+    margin-bottom: 0;
+  }
+  .describe {
+    padding-left: 1.5em;
+  }
+  .details,.describe {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+}
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+      min-height: 46px;
+      line-height: 46px;
+    }
+    .ant-card-head-title {
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+
+  .firstCard {
+    :global {
+      .ant-card-body {
+        padding: 0 32px;
+      }
+    }
+    .cardList {
+      padding: 16px 0;
+      overflow: hidden;
+      border-bottom: 1px solid #d3d8e3;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .termStyle {
+        min-width: 90px;
+      }
+    }
+  }
+
+  .font_h3 {
+    margin-top: 24px;
+    font-size: 17px;
+    color: #4a7dff;
+  }
+
+  .pieCard {
+    margin-bottom: 16px;
+    :global {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+    .pieWrapper {
+      width: 50%;
+      float: left;
+      .pieCls {
+        > ul > li {
+          margin-bottom: 4px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .pieItem {
+        border: 1px solid #d3d3d3;
+        border-top: 0;
+        border-right: 0;
+        height: 80px;
+        padding: 8px;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+      .pieTit {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      .pieTxt {
+        color: #999;
+        font-size: 12px;
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .blockLevel {
+    margin-bottom: 24px;
+    :global {
+      .ant-table-tbody {
+        .selectOrange {
+          color: #FCC160;
+        }
+        .selectGreen {
+          color: #85DCAB;
+        }
+        .selectRed {
+          color: #B31818;
+        }
+        .selectPink {
+          color: #FA9191;
+        }
+      }
+      .ant-card-bordered:not(:last-child) {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .ant-card-bordered:not(:first-child) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .ant-card-head {
+        min-height:46px;
+      }
+      .ant-card-body {
+        padding: 16px;
+      }
+      .ant-list-split .ant-list-item:last-child {
+        border-bottom: 1px solid #e8e8e8;
+      }
+      .ant-card-type-inner .ant-card-head {
+        padding: 0 16px;
+      }
+    }
+
+    .tabWrap {
+      margin-top: 32px;
+    }
+    .testContent {
+      padding: 0;
+      min-height: 300px;
+      .imgTit {
+        color: #000;
+        font-size: 16px;
+        padding: 10px 0;
+      }
+      .img {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .footFont {
+      //border-top: 1px solid rgba(211, 211, 211, 0.5);
+      padding: 16px 0 0 0;
+    }
+  }
+}
+
+.print{
+  margin-left: 8px;
+}

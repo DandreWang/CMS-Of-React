@@ -1,0 +1,11 @@
+{
+  "errcode": 99,
+  "errmsg": null,
+  "data": {
+    "userid": 2,
+    "account_id": 2,
+    "name": "测评师账号",
+    "notifyCount": 0,
+    "role_name": "测评师"
+  }
+}

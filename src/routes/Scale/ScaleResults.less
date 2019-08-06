@@ -1,0 +1,112 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  .title {
+    margin-bottom: 24px;
+    font-weight: bold;
+    .no {
+      color: #4a7dff;
+      font-weight: normal;
+    }
+  }
+  .salesBar {
+    padding: 24px;
+    background: #f2f2f2;
+    margin-bottom: 16px;
+    h4{
+      font-size: 18px;
+    }
+    :global {
+      .ant-table-tbody {
+        .selectOrange {
+          color: #FCC160;
+        }
+        .selectGreen {
+          color: #85DCAB;
+        }
+        .selectRed {
+          color: #B31818;
+        }
+        .selectPink {
+          color: #FA9191;
+        }
+      }
+    }
+  }
+  .testResult{
+    border: 1px solid rgba(211, 211, 211, 0.5);
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    .resultDescrip {
+      border-bottom: 1px solid #d3d8e3;
+      padding: 10px 16px 16px;
+      .resultTit{
+        font-size: 16px;
+      }
+      .resultTxt{
+        min-height: 70px;
+      }
+    }
+    .resultDescrip:last-child {
+      border-bottom: 0;
+    }
+  }
+  .cancelBtn {
+    margin-left: 8px;
+  }
+}
+
+.subjectName{
+  font-size: 18px;
+  color:#333;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+.headerList {
+  padding-bottom: 30px;
+}
+
+.divider {
+  margin-top: 16px;
+}
+.treatSituation{
+  margin-top: 30px;
+  textarea{
+    border: 1px solid #d6d6d6;
+    height: 100px;
+    width: 100%;
+  }
+  .label{
+    font-weight: bold;
+    margin-right: 16px;
+  }
+}
+.treatSug{
+  padding: 16px;
+  border: 1px dashed #4a7dff;
+  border-radius: 2px;
+  background-color: rgba(74, 125, 255, 0.03);
+  h3{
+    font-size: 15px;
+  }
+  .number{
+    color: #4a7dff;
+    padding-left: 16px;
+  }
+}
+.required{
+  &:before{
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 14px;
+    color: #f5222d;
+  }
+}
+

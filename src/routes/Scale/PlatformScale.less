@@ -1,0 +1,186 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.cardList {
+  margin-bottom: -24px;
+
+  .card {
+    :global {
+      .ant-card-meta-title {
+        margin-bottom: 12px;
+        & > a {
+          color: @heading-color;
+          display: inline-block;
+          max-width: 100%;
+        }
+      }
+      .ant-card-actions {
+        background: #f7f9fa;
+      }
+      .ant-card-body:hover {
+        .ant-card-meta-title > a {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+  .item {
+    height: 64px;
+  }
+
+  :global {
+    .ant-list .ant-list-item-content-single {
+      max-width: 100%;
+    }
+  }
+}
+
+.extraImg {
+  margin-top: -60px;
+  text-align: center;
+  width: 195px;
+  img {
+    width: 100%;
+  }
+}
+
+.newButton {
+  background-color: #fff;
+  border-color: @border-color-base;
+  border-radius: @border-radius-sm;
+  color: @text-color-secondary;
+  width: 100%;
+  height: 188px;
+}
+
+.cardAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+
+.cardDescription {
+  .textOverflowMulti();
+}
+
+.pageHeaderContent {
+  position: relative;
+}
+
+.contentLink {
+  margin-top: 16px;
+  a {
+    margin-right: 32px;
+    img {
+      width: 24px;
+    }
+  }
+  img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+.search{
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 16px;
+  line-height: 30px;
+  button{
+    margin-left: 16px;
+    margin-top: 3px;
+  }
+  .addList{
+    margin-top: 16px;
+    button{
+      margin-left: 0;
+    }
+  }
+}
+.mainTab{
+  .colTab1{
+    padding-top: 8px;
+    .mainEdit{
+      padding: 16px;
+      input{
+        width: 180px;
+      }
+      i{
+        margin-left: 8px;
+      }
+      :global{
+        .ant-select{
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .colTab{
+    border-right: 1px solid #f2f2f2;
+    padding-top: 8px;
+    .setPaneForm{
+      padding: 16px;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+      textarea{
+        margin-top: 16px;
+      }
+      .title{
+        display: flex;
+        i{
+          flex: 1;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4px;
+          &:before{
+            color: red;
+            text-align: right;
+          }
+        }
+      }
+    }
+    textarea{
+      min-height: 88px;
+    }
+  }
+  :global {
+    .ant-tabs-tab {
+      padding: 10px 16px;
+    }
+    .ant-tabs-nav-container{
+      margin-left: 16px;
+    }
+    .ant-tabs-bar{
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .contentLink {
+    a {
+      margin-right: 16px;
+    }
+  }
+}
+@media screen and (max-width: @screen-md) {
+  .extraImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .pageHeaderContent {
+    padding-bottom: 30px;
+  }
+  .contentLink {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 1000px;
+    a {
+      margin-right: 16px;
+    }
+    img {
+      margin-right: 4px;
+    }
+  }
+}

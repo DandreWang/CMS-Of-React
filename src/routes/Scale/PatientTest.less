@@ -1,0 +1,246 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.steps-content {
+  padding-top: 32px;
+}
+.mainForm{
+  border-top: 1px solid rgba(211, 211, 211, 0.5);
+  padding-top: 16px;
+  a{
+    margin-left: 24px;
+  }
+  :global {
+    .ant-row {
+      margin-top: 16px;
+    }
+    .ant-calendar-picker {
+      width: 100%;
+    }
+  }
+}
+.headerList {
+  padding-bottom: 8px;
+}
+
+.sencondMainForm{
+  border: 1px dashed rgba(211, 211, 211, 0.5);
+  padding: 16px;
+  .itemWrap {
+    margin-top: 16px;
+  }
+  .itemTest{
+    border-radius: 4px;
+    padding: 7px 8px;
+    min-width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 16px;
+    :global {
+      .anticon {
+        margin-right: 8px;
+      }
+    }
+  }
+  .isComplete {
+    background-color: #61CC8F;
+    border: #61CC8F;
+    color: #fff;
+    cursor: not-allowed;
+    &:after {
+      content: none !important;
+    }
+  }
+}
+
+.thirdMainForm{
+  :global{
+    .ant-collapse-content-box {
+      padding: 0 16px;
+    }
+  }
+  .cardWrap{
+    :global(.ant-card .ant-card-body){
+      padding-top: 24px - 16px;
+    }
+  }
+  .thirdMainContent {
+    &:last-child .qualityTest{
+      border-bottom: 0;
+    }
+    h3 {
+      margin-top: 16px;
+    }
+    .qualityTest {
+      border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+      padding: 16px 16px 24px;
+      .title {
+        margin-bottom: 24px;
+      }
+      .titLabel {
+        font-weight: bold;
+        color: #333;
+      }
+      .titTxt {
+        color: #999;
+      }
+      .listNumber {
+        margin-top: 24px;
+        cursor: pointer;
+        display: table-cell;
+        background-color: #fcfcfc;
+        border-radius: 53px;
+        padding: 4px;
+        border: 1px solid #e3e3e3;
+      }
+    }
+    ul {
+      display: table-row;
+      li {
+        list-style: none;
+        float: left;
+        width: 42px;
+        border-right: 1px solid #d9d9d9;
+        text-align: center;
+        .active {
+          background-color: #dce6ff;
+          border-radius: 41%;
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-bottom: 0;
+          color: #4a7dff;
+        }
+      }
+      li:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.fourMainForm{
+  border: 1px dashed rgba(211, 211, 211, 0.5);
+  padding: 16px;
+  .fourFormList{
+    margin-bottom: 16px;
+  }
+  .completeSelect {
+    color: #61CC8F;
+    :global {
+      .ant-select-selection {
+        background: #fff;
+      }
+      .ant-select-arrow {
+        display: none;
+      }
+    }
+  }
+  .itemTest1{
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #61cc8f;
+    border: 1px solid rgba(97, 204, 143, 0.5);
+  }
+  .itemTest{
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+  }
+  button{
+    margin-left: 16px;
+  }
+  .addCard{
+    border: 1px solid #4a7dff;
+    padding: 6px;
+    margin-top: 16px;
+    border-radius: 4px;
+    color: #4a7dff;
+    cursor: pointer;
+  }
+}
+
+.fiveMainForm {
+  margin: 32px auto 16px;
+}
+
+.listContent{
+  width: 300px;
+  margin: 0 auto;
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style: none;
+      //height: 32px;
+      line-height: 32px;
+    }
+    :global {
+      .dotGreen:before {
+        content: "\2022";
+        color: #66ff86;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+      .dotBrown:before {
+        content: "\2022";
+        color: #a52a2a;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+      .dotOrange:before {
+        content: "\2022";
+        color: #ffa076;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+      .dotPurple:before {
+        content: "\2022";
+        color: rgba(0, 0, 0, 0.45);
+        margin-right: 8px;
+        font-size: 16px;
+      }
+      .dotBlue:before {
+        content: "\2022";
+        color: #769dff;
+        margin-right: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.buttomBtn{
+  background: #fff;
+  width: 100%;
+  text-align: right;
+  padding: 16px;
+  button{
+    margin-right: 16px;
+  }
+}
+
+.scaleDesc{
+  border:1px solid #ddd;
+  height:32px;
+  line-height:32px;
+  padding-left:15px;
+  padding-right:15px;
+  border-radius:4px;
+  .textOverflow
+}
+
+.affixWrap{
+  :global(.ant-affix){
+    z-index: 1;
+    width: 250px !important;
+    margin-left: 750px;
+    .answerSta{
+      text-align: right;
+      margin-right: 32px;
+    }
+  }
+  .answerSta{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+}

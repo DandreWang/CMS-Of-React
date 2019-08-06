@@ -1,0 +1,421 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+@fontSizeScale:1.5;
+.cardItem{
+  .termStyle{
+    line-height: 1.5;
+  }
+}
+.listContentItem{
+  line-height: 1.5;
+}
+.headerList {
+  padding-bottom: 8px;
+  line-height: 2;
+}
+
+.salesBar {
+  padding: 24px;
+  background: #f2f2f2;
+  h4{
+    font-size: 16px;
+  }
+}
+
+.testResult{
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  //border-top: 0;
+  //border-radius: 0 0 5px 5px;
+  .resultItemWrapper {
+    padding: 16px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .resultItemTit {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .resultDescripWrapper {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .describeTiT {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .describeTiT11{
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .describe {
+    padding-left: 1.5em;
+  }
+  .details,.describe {
+    margin-bottom: 0;
+    margin-top: 4px;
+    white-space: pre-wrap;
+    line-height: 1.8;
+  }
+}
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom:72px;
+  :global {
+    .ant-card-head {
+      padding: 0 16px;
+      min-height: 46px;
+      line-height: 46px;
+    }
+    .ant-card-head-title {
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+
+  .firstCard {
+    :global {
+      .ant-card-body {
+        //padding: 0 32px;
+        padding-bottom: 8px;
+      }
+    }
+    .chiefRow{
+      margin-bottom: 8px;
+    }
+    .cardList {
+      padding: 16px 0;
+      overflow: hidden;
+      //border-bottom: 1px solid #d3d8e3;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .termStyle {
+        min-width: 90px;
+      }
+    }
+  }
+
+  .font_h3 {
+    margin-top: 24px;
+    font-size: 18px;
+    color: #4a7dff;
+  }
+
+  .pieCard {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    :global {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+    .pieContainer{
+      height: 400px;
+    }
+    .pieWrapper {
+      //width: 50%;
+      //float: left;
+      .pieCls {
+        > ul > li {
+          margin-bottom: 4px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .pieItem {
+        border-bottom: 1px solid #d3d3d3;
+        height: 82px;
+        padding: 8px;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+      .pieTit {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      .pieTxt {
+        color: #999;
+        font-size: 14px;
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .blockLevel {
+    margin-bottom: 24px;
+    :global {
+      .ant-table-tbody {
+        .selectOrange {
+          color: #FCC160;
+        }
+        .selectGreen {
+          color: #85DCAB;
+        }
+        .selectRed {
+          color: #B31818;
+        }
+        .selectPink {
+          color: #FA9191;
+        }
+      }
+      .ant-card-bordered:not(:last-child) {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .ant-card-bordered:not(:first-child) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .ant-card-head {
+        min-height:46px;
+      }
+      .ant-card-body {
+        padding: 16px;
+      }
+      .ant-list-split .ant-list-item:last-child {
+        border-bottom: 1px solid #e8e8e8;
+      }
+      .ant-card-type-inner .ant-card-head {
+        padding: 0 16px;
+      }
+    }
+
+    .tabWrap {
+      margin-top: 32px;
+    }
+    .testContent {
+      padding: 0;
+      min-height: 300px;
+      .imgTit {
+        color: #000;
+        font-size: 16px;
+        padding: 10px 0;
+      }
+      .img {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .footFont {
+      //border-top: 1px solid rgba(211, 211, 211, 0.5);
+      padding: 16px 0 0 0;
+    }
+  }
+}
+
+.print{
+  margin-left: 8px;
+}
+
+.subjectName{
+  font-size: 14px;
+  color:#333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+  :global{
+    .global-synthesis-for-export{
+      .ant-layout-header,
+      .ant-breadcrumb,
+      .ant-layout-sider{
+        display: none;
+      }
+    }
+
+  }
+
+
+
+.diagnosis{
+  &>:global(.ant-card-body){
+
+      padding: 0 !important;
+
+  }
+}
+
+
+.conclusion{
+  //font-weight: bold;
+  margin-top: 10px;
+  border-top: 1px solid rgb(232, 232, 232);
+  padding-top: 16px;
+}
+
+.main_title{
+  font-size: 22px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+.cardList {
+  padding: 4px 0;
+
+}
+
+@media print {
+
+  *,
+  *:after,
+  *:before{
+    //transition: none !important;
+  }
+
+  .footerWrap{
+    display: none;
+  }
+
+  :global{
+    .ant-card-bordered{
+      border-width: 1px/0.8;
+    }
+  }
+
+  html, body {
+    height: auto;
+    zoom: 80%;
+  }
+
+
+
+  body{
+    :global{
+      .ant-card{
+        font-size: 14px*@fontSizeScale !important;
+      }
+    }
+  }
+
+  .pieCard{
+    .pieContainer{
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+
+  .salesBar,.radarWrap,.gaugeWrap{
+    width:100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .brokenLineWrap{
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  .salesBar {
+    h4{
+      font-size: 16px*@fontSizeScale !important;
+    }
+  }
+
+  .testResult{
+
+    .resultItemTit {
+      font-size: 14px*@fontSizeScale !important;
+    }
+
+    .describeTiT {
+      font-size: 14px*@fontSizeScale !important;
+    }
+    .describeTiT11{
+      font-size: 14px*@fontSizeScale !important;
+    }
+
+  }
+
+
+  .wrap {
+    //width:800px*5/4 !important;
+    width:100% !important;
+    :global {
+      .ant-card-head-title {
+        font-size: 16px*@fontSizeScale !important;
+      }
+    }
+
+    .font_h3 {
+      font-size: 18px*@fontSizeScale !important;
+    }
+
+    .pieCard {
+      .pieWrapper {
+        .pieTxt {
+          font-size: 14px*@fontSizeScale !important;
+        }
+      }
+    }
+
+    .blockLevel {
+      .testContent {
+        .imgTit {
+          font-size: 16px*@fontSizeScale !important;
+        }
+      }
+    }
+  }
+  .subjectName{
+    font-size: 14px*@fontSizeScale !important;
+  }
+  .main_title{
+    font-size: 22px*@fontSizeScale !important;
+  }
+  .export_block{
+    page-break-before: always;
+  }
+  table{
+    page-break-inside:avoid;
+  }
+
+  @page {
+    //size: A4 portrait;
+    //size: 210mm 297mm;
+    // size: 794px 1123px;
+    //size:8.5in 11in;
+    //margin: 2cm
+
+  }
+
+
+
+  //@page{
+  //  @top-center {
+  //    content: "这是空白页";
+  //  }
+  //
+  //  @bottom-left, @bottom-center, @bottom-right {
+  //  border-top: 1px solid gray;
+  //}
+  //
+  //  @bottom-center {
+  //    content: "第" counter(page) "页";
+  //  }
+  //
+  //  size: A4 portrait;
+  //
+  //  orphans:200;
+  //  widows:200;
+  //
+  //}
+
+
+
+}
+
+

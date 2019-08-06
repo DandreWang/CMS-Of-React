@@ -1,0 +1,124 @@
+@import '~antd/lib/style/themes/default.less';
+
+.topWrapper {
+  background: #fff;
+  padding: 0 24px;
+  border-radius: 2px;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+.topDetail {
+  height: 60px;
+  border-bottom: 1px solid #E8E8E8;
+  .topNm {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+  }
+  .topImfor {
+    float: left;
+    margin-left: 16px;
+  }
+  .toBtn {
+    float: right;
+    margin-top: 15px;
+  }
+}
+.impression {
+  .hisTit {
+    font-size: 16px;
+    color: rgba(0,0,0,.65);
+  }
+  .item {
+    background: #F6F6F6 !important;
+    color: #7D8494;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+.listContent {
+  font-size: 0;
+  .listContentItem {
+    color: @text-color-secondary;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: @font-size-base;
+    margin: 0 8px;
+    line-height: 1.5;
+  }
+}
+.mainCard {
+  :global {
+    .ant-list-item {
+      align-items: flex-start;
+      padding: 16px 0 0;
+      &:last-child {
+        padding: 16px 0;
+      }
+    }
+    .ant-list-item-content {
+      justify-content: flex-start;
+    }
+    .ant-card-body {
+      padding: 0 16px;
+    }
+    .ant-timeline-item {
+      padding: 0 0 32px;
+      &:last-child .ant-timeline-item-tail{
+        border: 0;
+      }
+    }
+  }
+  .timeTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  .cardItem {
+    margin-bottom: 16px;
+  }
+  .cardConTit {
+    min-width: 90px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.85);
+  }
+  .cardBtn {
+    text-align: right;
+    padding: 12px 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+}
+.icons {
+  color: #1890ff;
+}
+.rCard {
+  margin-bottom: 16px;
+  :global {
+    .pie-sub-title {
+      font-size: 12px !important;
+      margin-top: 8px;
+      margin-bottom: unset;
+    }
+    .pie-stat {
+      font-size: 20px !important;
+    }
+    .selectOrange {
+      color: #faad14 !important;
+    }
+    .selectGreen {
+      color: #52c41a;
+    }
+    .selectRed {
+      color: #f5222d;
+    }
+    .profile-tabTool {
+      min-width: 60px ;
+    }
+  }
+}
+

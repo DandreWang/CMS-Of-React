@@ -1,0 +1,91 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+  .title {
+    margin-bottom: 24px;
+    font-weight: bold;
+    .no {
+      color: #4a7dff;
+      font-weight: normal;
+    }
+  }
+  .headTest {
+    :global {
+      .ant-card-head {
+        min-height: 46px;
+        line-height: 46px;
+        padding: 0 16px;
+      }
+      .ant-card-head-title {
+        flex: 0.8 1;
+        padding: 0;
+      }
+      .ant-card-extra {
+        flex: 0.2 1;
+        padding: 0;
+      }
+      .ant-card-body {
+        padding: 16px 0;
+      }
+    }
+
+    .testContent {
+      padding: 0 16px;
+      min-height: 300px;
+      .imgTit {
+        color: #000;
+        font-size: 16px;
+        padding: 10px 0;
+      }
+      .img {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+    .untestContent {
+      display:table;
+      min-height: 300px;
+      width: 100%;
+      .child {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        .unImg {
+          width: 60px;
+        }
+        .unTxt {
+          margin-top: 16px;
+          font-size: 16px;
+          color: #a4a8b0;
+        }
+      }
+    }
+    .listCard {
+      margin-top: 32px;
+      :global{
+        .ant-card-body {
+          padding: 0 0 24px;
+        }
+      }
+      .listItem {
+        padding-left: 16px;
+      }
+      .footFont {
+        padding: 24px 16px 0;
+        border-top: 1px solid rgba(211, 211, 211, 0.5);
+      }
+    }
+  }
+
+  .cancelBtn {
+    margin-left: 8px;
+  }
+}
+
+
+.headerList{
+  padding-bottom: 20px;
+}
